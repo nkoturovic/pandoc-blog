@@ -1,7 +1,10 @@
 body {
-  width: 650px;
   max-width: 90%;
-  margin: 3em auto;
+  max-width: 44em; 
+  padding-right: 2em;
+  padding-left: 2em;
+  margin: 1em auto;
+  font-family: Verdana, sans-serif;
 }
 
 .title {
