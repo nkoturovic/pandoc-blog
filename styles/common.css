@@ -27,8 +27,9 @@ hr {
 }
 
 blockquote, div.sourceCode {
-  background: #f9f9f9;
+  background: #f8f8f8;
   padding: 0.5em 10px;
+  border: 1px solid gray;
 }
 
 p > code, li > code {

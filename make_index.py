@@ -5,17 +5,16 @@
 # metadata should be listed in those posts. For header/footer information, it
 # will probably be easier to modify templates/index.html.
 
-from os import listdir, makedirs
+from os import listdir
 import frontmatter
 from datetime import datetime
 from dateutil.parser import parse
 import pytz
 import jsonfeed as jf
-import errno
 
-OUTPUT_FOLDER = "out"
-MARKDOWN_POSTS_PATH = "./src/posts"
-OUT_POSTS_PATH = "posts"
+OUTPUT_FOLDER = "blog-out"
+MARKDOWN_POSTS_PATH = "./blog-src/post"
+OUT_POSTS_PATH = "post"
 STATIC_FILES_PATH = OUTPUT_FOLDER + "/" + OUT_POSTS_PATH
 
 isNaive = lambda d: d.tzinfo is None or d.tzinfo.utcoffset(d) is None
@@ -39,19 +38,21 @@ def getMetadata(static_post):
     out['abstract'] = post.get('abstract')
     out['draft'] = post.get('draft')
     out['filename'] = static_post
+
     return out
 
 def getStaticFilename(post_metadata):
     return post_metadata['filename'][:-3] + ".html"
 
-static_posts = listdir(MARKDOWN_POSTS_PATH)
-metadatas = [getMetadata(fn) for fn in static_posts]
-# Don't index drafts.
-metadatas = [m for m in metadatas if not m['draft']]
-metadatas.sort(key=lambda md: md['date'], reverse=True)
-
 def main():
-    with open("./out/index.md", "w") as f:
+    static_posts = listdir(MARKDOWN_POSTS_PATH)
+    metadatas = [getMetadata(fn) for fn in static_posts]
+    # Don't index drafts.
+    metadatas = [m for m in metadatas if not m['draft']]
+    metadatas.sort(key=lambda md: md['date'], reverse=True)
+
+    # Generating index.html
+    with open("./" + OUTPUT_FOLDER + "/index.md", "w") as f:
         if len(metadatas) == 0:
             f.write("There aren't any posts yet.\n")
         else:
@@ -62,12 +63,12 @@ def main():
                 ))
                 if metadata['abstract']:
                     f.write("{} &middot; {}\n".format(
-                        metadata['date'].strftime("%B %d, %Y"),
+                        metadata['date'].strftime("%B %d, %Y - %H:%M"),
                         metadata['abstract']
                     ))
                 f.write("\n")
 
-# Construct a JSON feed.
+    # Construct a JSON feed.
     feed = jf.Feed("blog")
     for metadata in metadatas:
         url = getStaticFilename(metadata)
@@ -80,6 +81,7 @@ def main():
         if metadata['date']:
             # isoformat is RFC-compatible iff the datetime is timezone-aware.
             item.date_published = metadata['date'].isoformat()
+
         # Set abstract if available.
         if metadata['abstract']:
             item.summary = metadata['abstract']
