@@ -53,27 +53,74 @@
        url('../font/inconsolata/inconsolata-v21-latin-700.svg#Inconsolata') format('svg'); /* Legacy iOS */
 }
 
+@media screen and (max-width: 600px) {
+  figure img {
+      max-width: 100%;
+  }
+  figure figcaption {
+      max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 720px) {
+  figure img {
+      max-width: 94%;
+  }
+  figure figcaption {
+      max-width: 94%;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  figure img {
+      max-width: 84%;
+  }
+  figure figcaption {
+      max-width: 84%;
+  }
+}
+
+@media print {
+      /* .logo-container, */
+      /* .img-wrapper, */
+      img {
+        max-with: none !important;
+        width: 88% !important;
+     }
+     .navigation {
+         display: none
+     }
+}
+
 body {
+  font-size: 15px;
   max-width: 90%;
-  max-width: 44em; 
-  padding-right: 2em;
-  padding-left: 2em;
-  margin: 1em auto;
+  max-width: 51em; 
+  /* padding-right: 0.5em; */
+  /* padding-left: 0.5em; */
+  margin: 0.1em auto;
   font-family: Open Sans, Verdana, sans-serif;
+  background-color: gray;
+}
+
+.content {
+  background-color: #fefefe;
+  padding: 2% 4.5% 2% 4.5%;
+  min-height: 100vh;
 }
 
 .title {
-  font-size: 2.5em
+  font-size: 2.4em
 }
 
 body li {
   text-align: left;
-  line-height: 1.3;
+  line-height: 1.6;
 }
 
 p {
   text-align: justify;
-  line-height: 1.3;
+  line-height: 1.6;
 }
 
 hr {
@@ -82,9 +129,15 @@ hr {
 }
 
 blockquote, div.sourceCode {
+  max-width: 41em; 
   background: #f8f8f8;
-  padding: 0.5em 10px;
+  padding: 0.5em;
+  margin-left: 2%;
+  margin-right: 2%;
   border: 1px solid gray;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.8em;
 }
 
 p > code, li > code {
@@ -97,8 +150,16 @@ p > code, li > code {
   white-space: nowrap;
 }
 
-img {
-  max-width: 100%;
+figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure figcaption {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 /* Prevent subscripts, superscripts from changing line height. */

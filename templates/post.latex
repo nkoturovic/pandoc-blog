@@ -3,9 +3,9 @@
 
 % Code should be bit refactored
 
-\documentclass[a4paper,11pt,twoside]{article}
+\documentclass[a4paper,12pt,twoside]{article}
 \usepackage[bindingoffset=0mm,%
-            left=17mm,right=17mm,top=26mm,bottom=12mm,%
+            left=17mm,right=17mm,top=26mm,bottom=15mm,%
 	    footskip=12mm]{geometry}
 
 %\usepackage[Latin]{babel}
@@ -75,11 +75,11 @@ $endif$
     %captionpos=0, % sets the caption-position to bottom
     %abovecaptionskip=0pt,
     %belowcaptionskip=3pt,
-    aboveskip=7pt,
-    belowskip=1pt,
+    aboveskip=12pt,
+    belowskip=5pt,
     breaklines=true,
-    xleftmargin=5pt,
-    xrightmargin=5pt,
+    xleftmargin=35pt,
+    xrightmargin=35pt,
     tabsize=4, % sets default tabsize to 4 spaces
     columns=fullflexible,
     showstringspaces=false,
@@ -97,7 +97,7 @@ $endif$
 
 \DeclareCaptionFormat{listing}{\hspace{1pt}#1#2#3}
 \captionsetup[lstlisting]{format=listing,singlelinecheck=false,labelsep=colon,labelfont=bf}
-\usepackage[labelfont=bf]{caption} 
+\usepackage[labelformat=empty,labelfont=bf]{caption} 
 
 % Listing and enumerate around padding
 \usepackage{multicol}
@@ -141,7 +141,7 @@ $endif$
 %  }
 
 \usepackage{titling}
-\setlength{\droptitle}{-20mm}
+\setlength{\droptitle}{-25mm}
 
 \usepackage{fancyhdr}
 
@@ -358,7 +358,7 @@ $if(graphics)$
 % Scale images if necessary, so that they will not overflow the page
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=0.75\maxwidth,height=0.75\maxheight,keepaspectratio}
+\setkeys{Gin}{width=0.6\maxwidth,height=0.6\maxheight,keepaspectratio}
 $endif$
 $if(beamer)$
 % Prevent slide breaks in the middle of a paragraph:
@@ -539,6 +539,7 @@ $else$
 $endif$
 $if(abstract)$
 \begin{abstract}
+\vspace{-5pt}
 \centering $abstract$
 \end{abstract}
 $endif$
