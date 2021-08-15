@@ -11,6 +11,7 @@ pre:
 	mkdir -p blog-out/pdf
 	cp styles blog-out/ -r
 	cp blog-src/img blog-out/img -r
+	cp blog-src/font blog-out/font -r
 
 
 blog-out/post/%.html: blog-src/post/%.md
@@ -21,7 +22,7 @@ blog-out/post/%.html: blog-src/post/%.md
 	pandoc $< --template templates/post.latex --listings --pdf-engine=xelatex --resource-path="./blog-out/img" \
 		   --filter ./filters/pretty-date.py \
 		   -o "./blog-out/pdf/$(shell echo "$@" | sed -E 's:.*/(.*)\.html:\1:').pdf" \
-	       -V colorlinks -M monofont=Inconsolata 
+	       -V colorlinks -M monofont=inconsolata -M mainfont="Open Sans"
 
 index.html: $(OUT) make_index.py
 	python3 make_index.py

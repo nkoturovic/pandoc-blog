@@ -14,7 +14,7 @@
 \usepackage{indentfirst}
 %\setlength{\parindent}{5mm}
 \usepackage[T1]{fontenc}
-
+%\usepackage[sfdefault]{somefont}
 \usepackage[explicit]{titlesec}
 \usepackage{ulem}
 
@@ -22,8 +22,8 @@
 % \usepackage{grffile}
 \graphicspath{ {./blog-src/img} }
 
-\titlespacing\section{0pt}{9pt plus 4pt minus 2pt}{8.25pt plus 2pt minus 2pt}
-\titlespacing\subsection{0pt}{9pt plus 4pt minus 2pt}{8.25pt plus 2pt minus 2pt}
+\titlespacing\section{0pt}{9.5pt plus 6pt minus 4pt}{8.5pt plus 3pt minus 3pt}
+\titlespacing\subsection{0pt}{9pt plus 5pt minus 3pt}{8.25pt plus 2.5pt minus 2.5pt}
 \titlespacing\subsubsection{0pt}{8.5pt plus 4pt minus 2pt}{8pt plus 2pt minus 2pt}
 
 \titleformat{\section}{\Large\bfseries}{\thesection}{1em}{#1}
@@ -48,6 +48,19 @@
 
 \usepackage{xltxtra,fontspec,xunicode}
 \usepackage{libertine}
+
+\setmainfont [ Path = ./blog-src/font/opensans/, 
+            Extension = .ttf,
+            UprightFont = *-Regular,
+            BoldFont = *-Bold]
+{OpenSans}
+
+\setmonofont [ Path = ./blog-src/font/inconsolata/, 
+            Extension = .ttf,
+            UprightFont = *-v21-latin-500,
+            BoldFont = *-v21-latin-700]
+{inconsolata}
+
 % \setmonofont[Scale=1,Ligatures=NoCommon]{Inconsolata}
 
 $if(langserbianlatin)$
@@ -62,8 +75,8 @@ $endif$
     %captionpos=0, % sets the caption-position to bottom
     %abovecaptionskip=0pt,
     %belowcaptionskip=3pt,
-    %aboveskip=-10pt,
-    %belowskip=1pt,
+    aboveskip=7pt,
+    belowskip=1pt,
     breaklines=true,
     xleftmargin=5pt,
     xrightmargin=5pt,
@@ -444,7 +457,7 @@ $endif$
   % load polyglossia as late as possible as it *could* call bidi if RTL lang (e.g. Hebrew or Arabic)
   \usepackage{polyglossia}
  $if(langserbianlatin)$
-    \newfontfamily\cyrillicfont{Inconsolata}[Script=Cyrillic]
+    \newfontfamily\cyrillicfont{inconsolata}[Script=Cyrillic]
     \setmainlanguage[Script=Latin]{serbian}
   $else$
     \setmainlanguage[$polyglossia-lang.options$]{$polyglossia-lang.name$}

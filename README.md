@@ -11,6 +11,8 @@ Deeply unattractive out of the box? Yes. Easy to customize? I hope so.
 + `pandoc`
 + Python 3
 + Python dependencies listed in `requirements.txt`. Install them with `make install`.
++ `Inconsolata` font on system - copy from `./blog-src/font` or install via package manager
++ `Open Sans` font on system - copy from `./blog-src/font` or install via package manager
 
 ## Usage
 
