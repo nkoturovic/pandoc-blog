@@ -69,7 +69,7 @@ $if(langserbianlatin)$
 $endif$
 
 \lstset {
-    basicstyle=\fontsize{9}{11}\ttfamily,breaklines=true
+    basicstyle=\fontsize{10}{10}\ttfamily,breaklines=true
     framesep=5pt,
     backgroundcolor=\color{lightgray!17},
     %captionpos=0, % sets the caption-position to bottom
@@ -78,8 +78,8 @@ $endif$
     aboveskip=12pt,
     belowskip=5pt,
     breaklines=true,
-    xleftmargin=35pt,
-    xrightmargin=35pt,
+    xleftmargin=5pt,
+    xrightmargin=5pt,
     tabsize=4, % sets default tabsize to 4 spaces
     columns=fullflexible,
     showstringspaces=false,
