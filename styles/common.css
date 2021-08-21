@@ -70,14 +70,13 @@ body {
   color: #ccc;
   font-size: 15px;
   max-width: 90%;
-  max-width: 60em; 
+  max-width: 63em; 
   /* padding-right: 0.5em; */
   /* padding-left: 0.5em; */
   margin: 0.1em auto;
   font-family: Open Sans, Verdana, sans-serif;
   /* background-color: gray; */
 }
-
 
 a, a:visited {
     color: #3A97C8;
@@ -182,7 +181,7 @@ sub {
   }
 }
 
-@media screen and (min-width: 720px) and (max-width: 1080px) {
+@media screen and (min-width: 720px) and (max-width: 1920px) {
   body {
       font-size: 16px;
   }
@@ -194,21 +193,9 @@ sub {
   }
 }
 
-@media screen and (min-width: 1080px) and (max-width: 1920px) {
-  body {
-      font-size: 17px;
-  }
-  figure img {
-      max-width: 83%;
-  }
-  figure figcaption {
-      max-width: 83%;
-  }
-}
-
 @media screen and (min-width: 1920px) {
   body {
-      font-size: 18px;
+      font-size: 17px;
   }
   figure img {
       max-width: 82%;
