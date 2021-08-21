@@ -53,39 +53,6 @@
        url('../font/inconsolata/inconsolata-v21-latin-700.svg#Inconsolata') format('svg'); /* Legacy iOS */
 }
 
-@media (min-width: 1921px) {
-	body {
-		font-size: 18px;
-	}
-}
-
-@media screen and (max-width: 600px) {
-  figure img {
-      max-width: 100%;
-  }
-  figure figcaption {
-      max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 600px) and (max-width: 720px) {
-  figure img {
-      max-width: 94%;
-  }
-  figure figcaption {
-      max-width: 94%;
-  }
-}
-
-@media screen and (min-width: 720px) {
-  figure img {
-      max-width: 84%;
-  }
-  figure figcaption {
-      max-width: 84%;
-  }
-}
-
 @media print {
       /* .logo-container, */
       /* .img-wrapper, */
@@ -195,4 +162,58 @@ sup, sub {
 
 sub {
   top: 0.4em;
+}
+
+@media screen and (max-width: 600px) {
+  figure img {
+      max-width: 100%;
+  }
+  figure figcaption {
+      max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 720px) {
+  figure img {
+      max-width: 94%;
+  }
+  figure figcaption {
+      max-width: 94%;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+  body {
+      font-size: 16px;
+  }
+  figure img {
+      max-width: 84%;
+  }
+  figure figcaption {
+      max-width: 84%;
+  }
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1920px) {
+  body {
+      font-size: 17px;
+  }
+  figure img {
+      max-width: 83%;
+  }
+  figure figcaption {
+      max-width: 83%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  body {
+      font-size: 18px;
+  }
+  figure img {
+      max-width: 82%;
+  }
+  figure figcaption {
+      max-width: 82%;
+  }
 }
