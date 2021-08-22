@@ -121,7 +121,7 @@ blockquote, div.sourceCode {
   border: 1px solid #555;
   margin-left: auto;
   margin-right: auto;
-  /* font-size: 0.9em; */
+  font-size: 0.95em;
 }
 
 p > code, li > code {
