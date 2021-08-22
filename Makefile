@@ -6,6 +6,10 @@ OUT=$(patsubst src/post/%.md, out/post/%.html, $(POST))
 all: pre out/styles $(OUT) out/index.html out/blog.html
 	
 pre: 
+	mkdir -p src/post
+	mkdir -p src/files
+	mkdir -p src/img
+	mkdir -p src/font
 	mkdir -p out
 	mkdir -p out/post
 	mkdir -p out/pdf
