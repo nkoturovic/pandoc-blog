@@ -3,7 +3,7 @@ POST=$(shell find blog-src/post/*)
 # in the post directory.
 OUT=$(patsubst blog-src/post/%.md, blog-out/post/%.html, $(POST))
 
-all: pre styles $(OUT) index.html
+all: pre blog-out/styles $(OUT) index.html
 	
 pre: 
 	mkdir -p blog-out
@@ -12,7 +12,7 @@ pre:
 	cp blog-src/img blog-out/img -r
 	cp blog-src/font blog-out/font -r
 
-styles: styles/common.css styles/index.css styles/post.css styles/nav.css
+blog-out/styles: styles/common.css styles/index.css styles/post.css styles/nav.css
 	cp styles blog-out/ -r
 
 blog-out/post/%.html: blog-src/post/%.md
