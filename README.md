@@ -2,7 +2,7 @@
 
 This is a *very* basic Pandoc static site generator.
 
-I've avoided writing CSS beyond some very basic readability improvements/demonstrating that CSS can be added. The goal here is just to populate well-structured HTML documents and a generated JSON feed. [View a demo site.](http://lukasschwab.me/pandoc-blog/index.html)
+I've avoided writing CSS beyond some very basic readability improvements/demonstrating that CSS can be added. The goal here is just to populate well-structured HTML documents and a generated JSON feed. [View a demo site.](http://kotur-blog.000webhostapp.com/)
 
 Deeply unattractive out of the box? Yes. Easy to customize? I hope so.
 

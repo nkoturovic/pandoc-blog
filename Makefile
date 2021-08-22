@@ -3,16 +3,17 @@ POST=$(shell find blog-src/post/*)
 # in the post directory.
 OUT=$(patsubst blog-src/post/%.md, blog-out/post/%.html, $(POST))
 
-all: pre $(OUT) index.html
+all: pre styles $(OUT) index.html
 	
 pre: 
 	mkdir -p blog-out
 	mkdir -p blog-out/post
 	mkdir -p blog-out/pdf
-	cp styles blog-out/ -r
 	cp blog-src/img blog-out/img -r
 	cp blog-src/font blog-out/font -r
 
+styles: styles/common.css styles/index.css styles/post.css styles/nav.css
+	cp styles blog-out/ -r
 
 blog-out/post/%.html: blog-src/post/%.md
 	pandoc -s --highlight-style=pygments -f markdown+fenced_divs -s $< -o $@ \
