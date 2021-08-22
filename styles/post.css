@@ -1,7 +1,4 @@
-.alignleft {
-	float: left;
-}
-
-.alignright {
-	float: right;
+.title {
+    margin: 0;
+    padding 0;
 }

@@ -53,29 +53,20 @@
        url('../font/inconsolata/inconsolata-v21-latin-700.svg#Inconsolata') format('svg'); /* Legacy iOS */
 }
 
-@media print {
-      /* .logo-container, */
-      /* .img-wrapper, */
-      img {
-        max-with: none !important;
-        width: 88% !important;
-     }
-     .navigation {
-         display: none
-     }
-}
-
 body {
   background-color: #212121;
   color: #ccc;
   font-size: 15px;
-  max-width: 90%;
-  max-width: 63em; 
-  /* padding-right: 0.5em; */
-  /* padding-left: 0.5em; */
-  margin: 0.1em auto;
   font-family: Open Sans, Verdana, sans-serif;
   /* background-color: gray; */
+}
+
+.main {
+  max-width: 90%;
+  max-width: 62em; 
+  /* padding-right: 0.5em; */
+  /* padding-left: 0.5em; */
+  margin: 0 auto;
 }
 
 a, a:visited {
@@ -86,12 +77,14 @@ a, a:visited {
 
 .content {
   /* background-color: #121212; */
-  padding: 2% 4% 2% 4%;
+  padding: 2% 2% 2% 2%;
   min-height: 100vh;
 }
 
 .title {
-  font-size: 2.4em
+  font-size: 2.3em;
+  margin: 0;
+  padding: 0;
  }
 
 body li {
@@ -203,4 +196,16 @@ sub {
   figure figcaption {
       max-width: 82%;
   }
+}
+
+@media print {
+      /* .logo-container, */
+      /* .img-wrapper, */
+      img {
+        max-with: none !important;
+        width: 88% !important;
+     }
+     .navigation {
+         display: none
+     }
 }
