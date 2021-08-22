@@ -63,7 +63,7 @@ def main():
                 ))
                 if metadata['abstract']:
                     f.write("{} &middot; {}\n".format(
-                        metadata['date'].strftime("%B %d, %Y - %H:%M"),
+                        metadata['date'].strftime("%B %d, %Y"),
                         metadata['abstract']
                     ))
                 f.write("\n")
