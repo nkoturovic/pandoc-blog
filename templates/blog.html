@@ -30,7 +30,7 @@ $highlighting-css$
 $endif$
 $for(css)$
   <link rel="stylesheet" href="$css$" />
-  <link rel="stylesheet" href="../styles/nav.css" />
+  <link rel="stylesheet" href="styles/nav.css" />
 $endfor$
 $if(math)$
   $math$
@@ -44,12 +44,11 @@ $endfor$
 </head>
 <body>
 <header class="header">
-  <a href="../index.html" class="logo">Blog</a>
+  <a href="index.html" class="logo">Nebojša Koturović</a>
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
-    <li><a href="../pdf/$filename$.pdf" download>Download as PDF</a></li>
-    <li><a href="../index.html">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><a href="blog.html">Blog</a></li>
   </ul>
 </header>
@@ -58,31 +57,17 @@ $endfor$
 $for(include-before)$
 $include-before$
 $endfor$
-<!-- <div class="navigation"> -->
-<!--     <a class="alignleft" href="../index.html">&laquo; Blog</a> -->
-<!--     <a class="alignright" href="../pdf/$filename$.pdf" download>&#8659; Download as PDF</a> -->
-<!--     <div style="clear: both;"></div> -->
-<!-- </div> -->
-$if(title)$
-<header id="title-block-header">
-<h1 class="title">$title$</h1>
-$if(subtitle)$
-<p class="subtitle">$subtitle$</p>
-$endif$
-$for(author)$
-<p class="author">$author$</p>
-$endfor$
-$if(date)$
-<p class="date">$date$</p>
-$endif$
-</header>
-$endif$
+<!-- <header id="title-block-header"> -->
+<!--   <h1 class="title">Blog</h1> -->
+<!-- </header> -->
+<!--  -->
 $if(toc)$
 <nav id="$idprefix$TOC" role="doc-toc">
 $table-of-contents$
 </nav>
 $endif$
 $body$
+
 $for(include-after)$
 $include-after$
 $endfor$

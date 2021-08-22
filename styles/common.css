@@ -157,6 +157,15 @@ sub {
   top: 0.4em;
 }
 
+.center-text {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 600px) {
   figure img {
       max-width: 100%;

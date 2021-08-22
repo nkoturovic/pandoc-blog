@@ -1,7 +1,5 @@
-h2 {
-  margin-bottom: 0.3em;
-}
-
-p {
-  margin-top: 0;
+.avatar {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }

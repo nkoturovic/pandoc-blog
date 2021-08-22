@@ -49,13 +49,13 @@
 \usepackage{xltxtra,fontspec,xunicode}
 \usepackage{libertine}
 
-\setmainfont [ Path = ./blog-src/font/opensans/, 
+\setmainfont [ Path = ./src/font/opensans/, 
             Extension = .ttf,
             UprightFont = *-Regular,
             BoldFont = *-Bold]
 {OpenSans}
 
-\setmonofont [ Path = ./blog-src/font/inconsolata/, 
+\setmonofont [ Path = ./src/font/inconsolata/, 
             Extension = .ttf,
             UprightFont = *-v21-latin-500,
             BoldFont = *-v21-latin-700]

@@ -1,8 +1,8 @@
 ---
 title: My post
-author: Nebojsa Koturovic
+author: "Nebojsa Koturovic"
 date: 2021-08-14T14:41:15Z
-abstract: "Some abstract goes here"
+abstract: Some abstract goes here
 ---
 
 # Hello everybody 

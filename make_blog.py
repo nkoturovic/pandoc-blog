@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
-# make_index.py generates a Markdown document representing the blog index.
+# make_blog.py generates a Markdown document representing the blog index.
 # Ideally, this should only contain the list of links to posts and whatever
 # metadata should be listed in those posts. For header/footer information, it
-# will probably be easier to modify templates/index.html.
+# will probably be easier to modify templates/blog.html.
 
 from os import listdir
 import frontmatter
@@ -12,8 +12,8 @@ from dateutil.parser import parse
 import pytz
 import jsonfeed as jf
 
-OUTPUT_FOLDER = "blog-out"
-MARKDOWN_POSTS_PATH = "./blog-src/post"
+OUTPUT_FOLDER = "out"
+MARKDOWN_POSTS_PATH = "./src/post"
 OUT_POSTS_PATH = "post"
 STATIC_FILES_PATH = OUTPUT_FOLDER + "/" + OUT_POSTS_PATH
 
@@ -52,7 +52,7 @@ def main():
     metadatas.sort(key=lambda md: md['date'], reverse=True)
 
     # Generating index.html
-    with open("./" + OUTPUT_FOLDER + "/index.md", "w") as f:
+    with open("./" + OUTPUT_FOLDER + "/blog.md", "w") as f:
         if len(metadatas) == 0:
             f.write("There aren't any posts yet.\n")
         else:
