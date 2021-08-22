@@ -109,6 +109,7 @@ a[href] {
 
 a[href]:hover {
 	color: #3ba0e6;
+    text-decoration: underline;
 }
 
 blockquote, div.sourceCode {

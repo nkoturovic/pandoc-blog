@@ -1,11 +1,12 @@
 /* header */
 .header {
-  background-color: #222;
+  background-color: #282828;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   /* position: fixed; */
   /* z-index: 3; */
   display: inline-block;
   width: 100%;
+  color: #ccc;
 }
 
 .header ul {
@@ -13,19 +14,22 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #222;
+  background-color: #282828;
 }
 
 .header li a {
   display: block;
   padding: 15px 20px;
-  border-right: 1px solid #232323;
+  border-right: 1px solid #282828;
   text-decoration: none;
+  color: #ccc;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #282828;
+  background-color: #333;
+  color: #eee;
+  text-decoration: none;
 }
 
 .header .logo {
@@ -35,6 +39,12 @@
   padding: 10px 20px;
   text-decoration: none;
   font-weight: bold;
+  color: #ccc;
+}
+
+.header .logo:hover {
+    text-decoration: none;
+    color: #eee;
 }
 
 /* menu */
@@ -54,6 +64,11 @@
   padding: 28px 20px;
   position: relative;
   user-select: none;
+}
+
+.header .menu-icon:hover {
+    color: #eee;
+    background-color: #333;
 }
 
 .header .menu-icon .navicon {
