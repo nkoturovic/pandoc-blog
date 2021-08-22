@@ -20,6 +20,7 @@ Nullam volutpat tincidunt ligula, volutpat porta nunc ultrices a. Etiam interdum
 
 int main() {
 
+    /* This is example of very very long long long long comment which could go off the screen */
     std::cout << "Hello world" << std::endl;
 
     return 0;

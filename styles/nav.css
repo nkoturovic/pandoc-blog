@@ -68,7 +68,7 @@
 
 .header .menu-icon:hover {
     color: #eee;
-    background-color: #333;
+    /* background-color: #333; */
 }
 
 .header .menu-icon .navicon {

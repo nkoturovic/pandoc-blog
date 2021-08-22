@@ -539,7 +539,7 @@ $else$
 $endif$
 $if(abstract)$
 \begin{abstract}
-\vspace{-5pt}
+\vspace{-9pt}
 \centering $abstract$
 \end{abstract}
 $endif$

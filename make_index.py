@@ -57,6 +57,7 @@ def main():
             f.write("There aren't any posts yet.\n")
         else:
             for metadata in metadatas:
+                f.write('<div class="post-item">\n')
                 f.write("## [{}]({})\n".format(
                     metadata['title'],
                     OUT_POSTS_PATH + "/" + getStaticFilename(metadata)
@@ -67,6 +68,7 @@ def main():
                         metadata['abstract']
                     ))
                 f.write("\n")
+                f.write("</div>")
 
     # Construct a JSON feed.
     feed = jf.Feed("blog")
