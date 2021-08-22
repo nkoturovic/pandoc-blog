@@ -54,7 +54,7 @@ def main():
     # Generating index.html
     with open("./" + OUTPUT_FOLDER + "/blog.md", "w") as f:
         if len(metadatas) == 0:
-            f.write("There aren't any posts yet.\n")
+            f.write("## There aren't any posts yet.\n")
         else:
             for metadata in metadatas:
                 f.write('<div class="post-item">\n')

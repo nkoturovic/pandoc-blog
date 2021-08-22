@@ -58,6 +58,7 @@ body {
   color: #ccc;
   font-size: 15px;
   font-family: Open Sans, Verdana, sans-serif;
+  min-height: 95vh;
   /* background-color: gray; */
 }
 
@@ -78,7 +79,6 @@ a, a:visited {
 .content {
   /* background-color: #121212; */
   padding: 2% 2% 2% 2%;
-  min-height: 100vh;
 }
 
 .title {

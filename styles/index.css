@@ -3,3 +3,11 @@
   max-width: 300px;
   height: auto;
 }
+
+@media screen and (min-width: 1920px) {
+    .avatar {
+        max-width: 330px;
+    }
+}
+
+
