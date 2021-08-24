@@ -47,6 +47,14 @@
     color: #eee;
 }
 
+.header .logo .logo-blue-part {
+    color: #1e8ad6;
+}
+
+.header .logo:hover .logo-blue-part {
+    color: #3ba0e6;
+}
+
 /* menu */
 
 .header .menu {
@@ -59,7 +67,6 @@
 
 .header .menu-icon {
   cursor: pointer;
-  display: inline-block;
   float: right;
   padding: 28px 20px;
   position: relative;
@@ -148,7 +155,7 @@
       /* .logo-container, */
       /* .img-wrapper, */
       img {
-        max-with: none !important;
+        max-width: none !important;
         width: 88% !important;
      }
      .header {

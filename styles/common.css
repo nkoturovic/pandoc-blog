@@ -125,9 +125,10 @@ blockquote, div.sourceCode {
 }
 
 p > code, li > code {
+  /* border: 1px solid #777; */
   padding: 1px 3px;
   border-radius: 3px;
-  background-color: #f0f0f0;
+  background-color: #282828;
 }
 
 .math.inline {
@@ -138,6 +139,8 @@ figure img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
 figure figcaption {
@@ -168,19 +171,19 @@ sub {
 
 @media screen and (max-width: 600px) {
   figure img {
-      max-width: 100%;
+      max-width: 98%;
   }
   figure figcaption {
-      max-width: 100%;
+      max-width: 98%;
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 720px) {
   figure img {
-      max-width: 94%;
+      max-width: 88%;
   }
   figure figcaption {
-      max-width: 94%;
+      max-width: 88%;
   }
 }
 
@@ -189,10 +192,10 @@ sub {
       font-size: 16px;
   }
   figure img {
-      max-width: 84%;
+      max-width: 80%;
   }
   figure figcaption {
-      max-width: 84%;
+      max-width: 80%;
   }
 }
 
@@ -212,7 +215,7 @@ sub {
       /* .logo-container, */
       /* .img-wrapper, */
       img {
-        max-with: none !important;
+        max-width: none !important;
         width: 88% !important;
      }
      .navigation {

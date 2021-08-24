@@ -29,12 +29,11 @@ out/styles: styles/common.css styles/blog.css styles/post.css styles/nav.css sty
 out/post/%.html: src/post/%.md
 	pandoc -s --highlight-style=pygments -f markdown+fenced_divs -s $< -o $@ \
 	       --template templates/post.html --filter ./filters/pretty-date.py --css="../styles/common.css" --css="../styles/post.css" \
-		   -M filename="$(shell echo "$@" | sed -E 's:.*/(.*)\.html:\1:')" -M title-prefix="Nebojša Koturović"
-		   # --toc --toc-depth=3 
+		   -M filename="$(shell echo "$@" | sed -E 's:.*/(.*)\.html:\1:')" -M title-prefix="Nebojša Koturović" --toc --toc-depth=3 
 	pandoc $< --template templates/post.latex --listings --pdf-engine=xelatex --resource-path="./out/img" \
 		   --filter ./filters/pretty-date.py \
 		   -o "./out/pdf/$(shell echo "$@" | sed -E 's:.*/(.*)\.html:\1:').pdf" \
-	       -V colorlinks -M monofont=inconsolata -M mainfont="Open Sans"
+	       -V colorlinks -M monofont=inconsolata -M mainfont="Open Sans" --toc --toc-depth=3 
 
 out/blog.html: $(OUT) make_blog.py
 	python3 make_blog.py

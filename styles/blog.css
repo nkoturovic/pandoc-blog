@@ -1,7 +1,7 @@
-h2 {
-  margin-bottom: 0.3em;
+.post-item h2 {
+  margin-bottom: 0.1em;
 }
 
-p {
+.post-item p {
   margin-top: 0;
 }
