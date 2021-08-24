@@ -56,7 +56,6 @@ def main():
         if len(metadatas) == 0:
             f.write("## There aren't any posts yet.\n")
         else:
-            f.write("# Blog posts\n")
             for metadata in metadatas:
                 f.write('<div class="post-item">\n')
                 f.write("## [{}]({})\n".format(

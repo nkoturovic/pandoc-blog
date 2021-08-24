@@ -1,6 +1,6 @@
 ---
-title: Hello world
-author: Nebojsa Koturovic
+title: Writing your first C++ program
+author: Nebojša Koturović
 date: 2021-08-24T13:56:52Z
 abstract: "First program that every language newcomer writes is Hello world"
 ---
