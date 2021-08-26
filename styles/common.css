@@ -226,6 +226,53 @@ sub {
     color: #888; 
 }
 
+.btn-svg-icon {
+    width: 1.24em;
+    height: 1.24em;
+    transform: translate(-0.5em, 0.17em);
+    filter: invert(0.9);
+}
+
+.btn-div:hover .post-svg-icon {
+    filter: invert(0.96);
+}
+
+.btn-div {
+    margin-top: 0.5em;
+    display: inline-block;
+    padding: 0 2em;
+    border: 1px solid #444;
+    cursor: grab;
+    background-color: #282828;
+    margin-right: 0.3em;
+}
+
+.btn-div:hover {
+    background-color: #333;
+}
+
+.btn-div p {
+    font-size: 0.95em;
+    font-weight: 800;
+}
+
+a > .btn-div {
+    color: #ccc;
+}
+
+a > .btn-div:hover {
+    color: #eee;
+    text-decoration: none;
+}
+
+#btn-div-back {
+    padding: 0 1.3em;
+}
+
+#btn-div-back img {
+    transform: translate(0em, 0.17em);
+}
+
 @media print {
       /* .logo-container, */
       /* .img-wrapper, */
