@@ -7,6 +7,7 @@
   display: inline-block;
   width: 100%;
   color: #ccc;
+  font-weight: 600;
 }
 
 .header ul {
@@ -149,6 +150,18 @@
   .header .menu-icon {
     display: none;
   }
+}
+
+.nav-svg {
+    width: 1.1em;
+    height: 1.1em;
+    transform: translate(-0.6em, 0.15em);
+    filter: invert(0.9);
+}
+
+
+li:hover .svg-icon {
+    filter: invert(0.96);
 }
 
 @media print {

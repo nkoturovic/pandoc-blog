@@ -32,9 +32,13 @@ $for(css)$
   <link rel="stylesheet" href="$css$" />
   <link rel="stylesheet" href="styles/nav.css" />
 $endfor$
-$if(math)$
-  $math$
-$endif$
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest"> 
+  $if(math)$
+    $math$
+  $endif$
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -48,8 +52,8 @@ $endfor$
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="blog.html">Blog</a></li>
+    <li><a href="index.html"><img class="nav-svg" src="./img/icon/fi-xnsuxl-home-solid.svg"/>Home</a></li>
+    <li><a href="blog.html"><img class="nav-svg" src="./img/icon/fi-xnsuxl-code-solid.svg"/>Blog</a></li>
   </ul>
 </header>
 <div class="main">

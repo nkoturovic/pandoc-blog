@@ -1,4 +1,42 @@
 .title {
     margin: 0;
-    padding 0;
+    /* padding: 0; */
+}
+
+.post-svg-icon {
+    width: 1.1em;
+    height: 1.1em;
+    transform: translate(-0.4em, 0.17em);
+    filter: invert(0.9);
+}
+
+.download-as-pdf:hover .post-svg-icon {
+    filter: invert(0.96);
+}
+
+.download-as-pdf {
+    margin-top: 0.4em;
+    display: inline-block;
+    padding: 0 2em;
+    border: 1px solid #444;
+    cursor: grab;
+    background-color: #282828;
+}
+
+.download-as-pdf:hover {
+    background-color: #333;
+}
+
+.download-as-pdf p {
+    font-size: 0.95em;
+    font-weight: 800;
+}
+
+.download-as-pdf a {
+    color: #ccc;
+}
+
+.download-as-pdf:hover a {
+    color: #eee;
+    text-decoration: none;
 }

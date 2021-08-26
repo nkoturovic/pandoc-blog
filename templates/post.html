@@ -32,6 +32,10 @@ $for(css)$
   <link rel="stylesheet" href="$css$" />
   <link rel="stylesheet" href="../styles/nav.css" />
 $endfor$
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 $if(math)$
   $math$
 $endif$
@@ -48,14 +52,14 @@ $endfor$
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
-    <li><a href="../pdf/$filename$.pdf">Download as PDF</a></li>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../blog.html">Blog</a></li>
+    <li><a href="../index.html"><img class="nav-svg" src="../img/icon/fi-xnsuxl-home-solid.svg"/>Home</a></li>
+    <li><a href="../blog.html"><img class="nav-svg" src="../img/icon/fi-xnsuxl-code-solid.svg"/>Blog</a></li>
   </ul>
 </header>
 <div class="main">
 <div class="content">
 <span class="path"><a href="../index.html">kotur.me</a>/<a href="../blog.html">blog</a>/<a class="current-path" href="./$filename$.html">$filename$</a></span>
+<div class="download-as-pdf"><p><a href="../pdf/$filename$.pdf"><img class="post-svg-icon" src="../img/icon/fi-xnsuxl-file-pdf-solid.svg"/>Download as PDF</a></div>
 $for(include-before)$
 $include-before$
 $endfor$
@@ -67,6 +71,7 @@ $endfor$
 $if(title)$
 <header id="title-block-header">
 <h1 class="title">$title$</h1>
+
 $if(subtitle)$
 <p class="subtitle">$subtitle$</p>
 $endif$

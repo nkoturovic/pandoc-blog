@@ -497,7 +497,7 @@ $endfor$
 $endif$
 
 $if(title)$
-\title{\huge\textbf{$title$} \\ \large{$subtitle$}\vspace{2pt}}
+\title{\LARGE\textbf{$title$} \\ \large{$subtitle$}\vspace{2pt}}
 $endif$
 $if(subtitle)$
 \providecommand{\subtitle}[1]{}

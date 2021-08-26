@@ -3,7 +3,7 @@ POST=$(shell find src/post/*)
 # in the post directory.
 OUT=$(patsubst src/post/%.md, out/post/%.html, $(POST))
 
-all: pre out/styles $(OUT) out/index.html out/blog.html
+all: pre out/styles $(OUT) out/index.html out/blog.html favicon
 	
 pre: 
 	mkdir -p src/post
@@ -19,6 +19,9 @@ pre:
 	cp src/img/* out/img -r
 	cp src/font/* out/font -r
 	cp src/files/* out/files -r
+
+favicon: src/img/favicon/android-chrome-192x192.png src/img/favicon/android-chrome-512x512.png src/img/favicon/apple-touch-icon.png src/img/favicon/favicon-16x16.png src/img/favicon/favicon-32x32.png src/img/favicon/favicon.ico src/img/favicon/site.webmanifest
+	cp $^ out/
 
 out/index.html: templates/index.html
 	cp templates/index.html out/index.html
