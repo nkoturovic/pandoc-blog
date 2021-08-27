@@ -5,6 +5,11 @@
   border-radius: 50%;
 }
 
+
+#index-content {
+    margin-top: 6vh;
+}
+
 @media screen and (min-width: 1920px) {
     .avatar {
         max-width: 330px;
