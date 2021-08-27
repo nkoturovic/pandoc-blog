@@ -115,8 +115,6 @@ a[href]:hover {
 blockquote, div.sourceCode {
   background: #222;
   padding: 0.5em;
-  margin-left: 2%;
-  margin-right: 2%;
   border: 1px solid #777;
 }
 
@@ -257,6 +255,10 @@ a > .btn-div:hover {
   }
   figure figcaption {
       max-width: 80%;
+  }
+
+  blockquote, div.sourceCode {
+      font-size: 0.95em;
   }
 }
 
