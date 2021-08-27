@@ -256,9 +256,8 @@ a > .btn-div:hover {
   figure figcaption {
       max-width: 80%;
   }
-
   blockquote, div.sourceCode {
-      font-size: 0.95em;
+      font-size: 0.93em;
   }
 }
 
