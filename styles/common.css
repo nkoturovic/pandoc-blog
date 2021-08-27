@@ -113,15 +113,11 @@ a[href]:hover {
 }
 
 blockquote, div.sourceCode {
-  /* max-width: 41em; */
   background: #222;
   padding: 0.5em;
   margin-left: 2%;
   margin-right: 2%;
   border: 1px solid #777;
-  margin-left: auto;
-  margin-right: auto;
-  /* font-size: 0.93em; */
 }
 
 p > code, li > code {
@@ -167,48 +163,6 @@ sub {
 .center {
   display: block;
   margin: 0 auto;
-}
-
-@media screen and (max-width: 600px) {
-  figure img {
-      max-width: 98%;
-  }
-  figure figcaption {
-      max-width: 98%;
-  }
-}
-
-@media screen and (min-width: 600px) and (max-width: 720px) {
-  figure img {
-      max-width: 88%;
-  }
-  figure figcaption {
-      max-width: 88%;
-  }
-}
-
-@media screen and (min-width: 720px) and (max-width: 1920px) {
-  body {
-      font-size: 16px;
-  }
-  figure img {
-      max-width: 80%;
-  }
-  figure figcaption {
-      max-width: 80%;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  body {
-      font-size: 17px;
-  }
-  figure img {
-      max-width: 82%;
-  }
-  figure figcaption {
-      max-width: 82%;
-  }
 }
 
 .path {
@@ -271,6 +225,51 @@ a > .btn-div:hover {
 
 #btn-div-back img {
     transform: translate(0em, 0.17em);
+}
+
+@media screen and (max-width: 600px) {
+  figure img {
+      max-width: 98%;
+  }
+  figure figcaption {
+      max-width: 98%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 720px) {
+  figure img {
+      max-width: 88%;
+  }
+  figure figcaption {
+      max-width: 88%;
+  }
+  blockquote, div.sourceCode {
+      font-size: 0.9em;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1920px) {
+  body {
+      font-size: 16px;
+  }
+  figure img {
+      max-width: 80%;
+  }
+  figure figcaption {
+      max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  body {
+      font-size: 17px;
+  }
+  figure img {
+      max-width: 82%;
+  }
+  figure figcaption {
+      max-width: 82%;
+  }
 }
 
 @media print {
