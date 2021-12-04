@@ -42,6 +42,19 @@ $endif$
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
+    <script src="https://giscus.app/client.js"
+        data-repo="nkoturovic/pandoc-blog"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkzOTYwMTM0MDE="
+        data-category="Comments"
+        data-category-id="DIC_kwDOF5qvWc4CAJnH"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-theme="transparent_dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+    </script>
 $for(header-includes)$
   $header-includes$
 $endfor$
@@ -93,6 +106,9 @@ $body$
 $for(include-after)$
 $include-after$
 $endfor$
+</div>
+<div class="comments">
+    <div class="giscus"></div>
 </div>
 </div>
 </body>
