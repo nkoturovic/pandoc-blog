@@ -30,15 +30,15 @@ $highlighting-css$
 $endif$
 $for(css)$
   <link rel="stylesheet" href="$css$" />
-  <link rel="stylesheet" href="../styles/nav.css" />
+  <link rel="stylesheet" href="styles/nav.css" />
 $endfor$
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-$if(math)$
-  $math$
-$endif$
+  <link rel="manifest" href="/site.webmanifest"> 
+  $if(math)$
+    $math$
+  $endif$
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -48,48 +48,30 @@ $endfor$
 </head>
 <body>
 <header class="header">
-  <a href="../index.html" class="logo">kotur<span class="logo-blue-part">.me</span></a>
+  <a href="index.html" class="logo">kotur<span class="logo-blue-part">.me</span></a>
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
-    <li><a href="../index.html"><img class="nav-svg" src="../img/icon/fi-xnsuxl-home-solid.svg"/>Home</a></li>
-    <li><a href="../blog.html"><img class="nav-svg" src="../img/icon/fi-xnsuxl-code-solid.svg"/>Blog</a></li>
+    <li><a href="index.html"><img class="nav-svg" src="./img/icon/fi-xnsuxl-home-solid.svg"/>Home</a></li>
+    <li><a href="blog.html"><img class="nav-svg" src="./img/icon/fi-xnsuxl-code-solid.svg"/>Blog</a></li>
   </ul>
 </header>
 <div class="main">
 <div class="content">
-<span class="path"><a href="../index.html">kotur.me</a>/<a href="../blog.html">blog</a>/<a class="current-path" href="./$filename$.html">$filename$</a></span>
-<a href="../blog.html"><div id="btn-div-back" class="btn-div"><p><img class="btn-svg-icon" src="../img/icon/fi-cwllxl-arrow-wide.svg"/></div></a>
-<a href="../pdf/$filename$.pdf"><div class="btn-div"><p><img class="btn-svg-icon" src="../img/icon/fi-xnsuxl-file-pdf-solid.svg"/>Download as PDF</div></a>
+<span class="path"><a href="index.html">kotur.me</a>/<a class="current-path" href="../blog.html">blog</a></span>
 $for(include-before)$
 $include-before$
 $endfor$
-<!-- <div class="navigation"> -->
-<!--     <a class="alignleft" href="../index.html">&laquo; Blog</a> -->
-<!--     <a class="alignright" href="../pdf/$filename$.pdf" download>&#8659; Download as PDF</a> -->
-<!--     <div style="clear: both;"></div> -->
-<!-- </div> -->
-$if(title)$
 <header id="title-block-header">
-<h1 class="title">$title$</h1>
-
-$if(subtitle)$
-<p class="subtitle">$subtitle$</p>
-$endif$
-$for(author)$
-<p class="author">$author$</p>
-$endfor$
-$if(date)$
-<p class="date">$date$</p>
-$endif$
+  <h1 class="title">Blog posts</h1>
 </header>
-$endif$
 $if(toc)$
 <nav id="$idprefix$TOC" role="doc-toc">
 $table-of-contents$
 </nav>
 $endif$
 $body$
+
 $for(include-after)$
 $include-after$
 $endfor$

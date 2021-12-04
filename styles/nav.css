@@ -7,6 +7,7 @@
   display: inline-block;
   width: 100%;
   color: #ccc;
+  font-weight: 600;
 }
 
 .header ul {
@@ -35,7 +36,7 @@
 .header .logo {
   display: block;
   float: left;
-  font-size: 1.9em;
+  font-size: 1.8em;
   padding: 10px 20px;
   text-decoration: none;
   font-weight: bold;
@@ -45,6 +46,14 @@
 .header .logo:hover {
     text-decoration: none;
     color: #eee;
+}
+
+.header .logo .logo-blue-part {
+    color: #1e8ad6;
+}
+
+.header .logo:hover .logo-blue-part {
+    color: #3ba0e6;
 }
 
 /* menu */
@@ -59,7 +68,6 @@
 
 .header .menu-icon {
   cursor: pointer;
-  display: inline-block;
   float: right;
   padding: 28px 20px;
   position: relative;
@@ -144,11 +152,23 @@
   }
 }
 
+.nav-svg {
+    width: 1.1em;
+    height: 1.1em;
+    transform: translate(-0.6em, 0.15em);
+    filter: invert(0.9);
+}
+
+
+li:hover .svg-icon {
+    filter: invert(0.96);
+}
+
 @media print {
       /* .logo-container, */
       /* .img-wrapper, */
       img {
-        max-with: none !important;
+        max-width: none !important;
         width: 88% !important;
      }
      .header {

@@ -1,79 +1,38 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+ <!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-$for(author-meta)$
-  <meta name="author" content="$author-meta$" />
-$endfor$
-$if(date-meta)$
-  <meta name="dcterms.date" content="$date-meta$" />
-$endif$
-$if(keywords)$
-  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
-$endif$
-  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
-  <style>
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-$if(quotes)$
-      q { quotes: "“" "”" "‘" "’"; }
-$endif$
-  </style>
-$if(highlighting-css)$
-  <style>
-$highlighting-css$
-  </style>
-$endif$
-$for(css)$
-  <link rel="stylesheet" href="$css$" />
-  <link rel="stylesheet" href="styles/nav.css" />
-$endfor$
-$if(math)$
-  $math$
-$endif$
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
-$for(header-includes)$
-  $header-includes$
-$endfor$
+<link rel="stylesheet" href="styles/common.css">
+<link rel="stylesheet" href="styles/index.css">
+<link rel="stylesheet" href="styles/nav.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 </head>
+<title>Nebojša Koturović - Home</title>
 <body>
 <header class="header">
-  <a href="index.html" class="logo">Blog</a>
+  <a href="index.html" class="logo">kotur<span class="logo-blue-part">.me</span></a>
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
-    <!-- <li><a href="#work">Home</a></li> -->
-    <li><a href="index.html">Blog</a></li>
-    <li><a href="#careers">About</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="index.html"><img class="nav-svg" src="./img/icon/fi-xnsuxl-home-solid.svg"/>Home</a></li>
+    <li><a href="blog.html"><img class="nav-svg" src="./img/icon/fi-xnsuxl-code-solid.svg"/>Blog</a></li>
   </ul>
 </header>
 <div class="main">
 <div class="content">
-$for(include-before)$
-$include-before$
-$endfor$
-<!-- <header id="title-block-header"> -->
-<!--   <h1 class="title">Blog</h1> -->
-<!-- </header> -->
-<!--  -->
-$if(toc)$
-<nav id="$idprefix$TOC" role="doc-toc">
-$table-of-contents$
-</nav>
-$endif$
-$body$
-
-$for(include-after)$
-$include-after$
-$endfor$
+<div class="center-text" id="index-content">
+ <h2>Hi, my name is Nebojša</h2>
+ <img class="avatar center" src="img/avatar.jpg"/>
+ <h3>I'm a software developer</h3>
+ Sometimes I write some <a href="blog.html">blog</a> posts
+ <h3 style="margin-bottom: 0.3em;"><a href="files/Nebojsa-Koturovic-Software-Developer-Resume.pdf">⇩ Resume</a></h3>
+ <a href="mailto:contact@kotur.me?subject=Hi, I saw your web presentation">contact@kotur.me</a>
+</div>
 </div>
 </div>
 </body>
-</html>
+</html> 

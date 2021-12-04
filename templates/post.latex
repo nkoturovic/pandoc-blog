@@ -49,13 +49,13 @@
 \usepackage{xltxtra,fontspec,xunicode}
 \usepackage{libertine}
 
-\setmainfont [ Path = ./blog-src/font/opensans/, 
+\setmainfont [ Path = ./src/font/opensans/, 
             Extension = .ttf,
             UprightFont = *-Regular,
             BoldFont = *-Bold]
 {OpenSans}
 
-\setmonofont [ Path = ./blog-src/font/inconsolata/, 
+\setmonofont [ Path = ./src/font/inconsolata/, 
             Extension = .ttf,
             UprightFont = *-v21-latin-500,
             BoldFont = *-v21-latin-700]
@@ -497,7 +497,7 @@ $endfor$
 $endif$
 
 $if(title)$
-\title{\Large\textbf{$title$} \\ \large{$subtitle$}\vspace{0pt}}
+\title{\LARGE\textbf{$title$} \\ \large{$subtitle$}\vspace{2pt}}
 $endif$
 $if(subtitle)$
 \providecommand{\subtitle}[1]{}
@@ -512,7 +512,7 @@ $if(institute)$
 \institute{$for(institute)$$institute$$sep$ \and $endfor$}
 $endif$
 
-\date{\normalsize\vspace{-5pt}\textsl{$date$}}
+\date{\normalsize\vspace{-6pt}\textsl{$date$}}
 % \date{}
 
 $if(beamer)$

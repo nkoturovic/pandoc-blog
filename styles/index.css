@@ -1,7 +1,19 @@
-h2 {
-  margin-bottom: 0.3em;
+.avatar {
+  width: 15em;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
 }
 
-p {
-  margin-top: 0;
+
+#index-content {
+    margin-top: 6vh;
 }
+
+@media screen and (min-width: 1920px) {
+    .avatar {
+        max-width: 330px;
+    }
+}
+
+

@@ -58,6 +58,7 @@ body {
   color: #ccc;
   font-size: 15px;
   font-family: Open Sans, Verdana, sans-serif;
+  min-height: 95vh;
   /* background-color: gray; */
 }
 
@@ -78,13 +79,12 @@ a, a:visited {
 .content {
   /* background-color: #121212; */
   padding: 2% 2% 2% 2%;
-  min-height: 100vh;
 }
 
 .title {
   font-size: 2.3em;
   margin: 0;
-  padding: 0;
+  padding: 0.2em 0;
  }
 
 body li {
@@ -113,21 +113,16 @@ a[href]:hover {
 }
 
 blockquote, div.sourceCode {
-  /* max-width: 41em; */
   background: #222;
   padding: 0.5em;
-  margin-left: 2%;
-  margin-right: 2%;
   border: 1px solid #777;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 0.93em;
 }
 
 p > code, li > code {
+  /* border: 1px solid #777; */
   padding: 1px 3px;
   border-radius: 3px;
-  background-color: #f0f0f0;
+  background-color: #282828;
 }
 
 .math.inline {
@@ -138,6 +133,8 @@ figure img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
 figure figcaption {
@@ -157,21 +154,99 @@ sub {
   top: 0.4em;
 }
 
+.center-text {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.path {
+    display: inline-block;
+    padding: 0.5em 0;
+    width: 100%;
+    color: #888; 
+}
+
+.path a.current-path {
+    font-weight: 600;
+    color: #3A97C8;
+}
+.path a.visited-path {
+    color: #888; 
+}
+
+.btn-svg-icon {
+    width: 1.24em;
+    height: 1.24em;
+    transform: translate(-0.5em, 0.17em);
+    filter: invert(0.9);
+}
+
+.btn-div:hover .post-svg-icon {
+    filter: invert(0.96);
+}
+
+.btn-div {
+    margin-top: 0.5em;
+    display: inline-block;
+    padding: 0 2em;
+    border: 1px solid #444;
+    cursor: grab;
+    background-color: #282828;
+    margin-right: 0.3em;
+}
+
+.btn-div:hover {
+    background-color: #333;
+}
+
+.btn-div p {
+    font-size: 0.95em;
+    font-weight: 800;
+}
+
+a > .btn-div {
+    color: #ccc;
+}
+
+a > .btn-div:hover {
+    color: #eee;
+    text-decoration: none;
+}
+
+#btn-div-back {
+    padding: 0 1.3em;
+}
+
+#btn-div-back img {
+    transform: translate(0em, 0.17em);
+}
+
 @media screen and (max-width: 600px) {
   figure img {
-      max-width: 100%;
+      max-width: 98%;
   }
   figure figcaption {
-      max-width: 100%;
+      max-width: 98%;
+  }
+
+  blockquote, div.sourceCode {
+      font-size: 0.88em;
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 720px) {
   figure img {
-      max-width: 94%;
+      max-width: 88%;
   }
   figure figcaption {
-      max-width: 94%;
+      max-width: 88%;
+  }
+  blockquote, div.sourceCode {
+      font-size: 0.93em;
   }
 }
 
@@ -180,10 +255,10 @@ sub {
       font-size: 16px;
   }
   figure img {
-      max-width: 84%;
+      max-width: 80%;
   }
   figure figcaption {
-      max-width: 84%;
+      max-width: 80%;
   }
 }
 
@@ -203,7 +278,7 @@ sub {
       /* .logo-container, */
       /* .img-wrapper, */
       img {
-        max-with: none !important;
+        max-width: none !important;
         width: 88% !important;
      }
      .navigation {
