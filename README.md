@@ -1,7 +1,7 @@
 # About this Repo
 
-+ This repo is a fork of [lukasschwab/pandoc-blog](https://github.com/lukasschwab/pandoc-blog/)
-+ You can see live demo on: [View a demo site.](https://www.kotur.me/)
++ This repo is a fork of: [lukasschwab/pandoc-blog](https://github.com/lukasschwab/pandoc-blog/)
++ You can see live demo on: [kotur.me](https://www.kotur.me/)
 
 # pandoc-blog
 
