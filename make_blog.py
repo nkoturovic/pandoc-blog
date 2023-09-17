@@ -10,7 +10,7 @@ import frontmatter
 from datetime import datetime
 from dateutil.parser import parse
 import pytz
-import jsonfeed as jf
+# import jsonfeed as jf
 
 OUTPUT_FOLDER = "out"
 MARKDOWN_POSTS_PATH = "./src/post"
@@ -71,32 +71,32 @@ def main():
                 f.write("</div>")
 
     # Construct a JSON feed.
-    feed = jf.Feed("blog")
-    for metadata in metadatas:
-        url = getStaticFilename(metadata)
-        item = jf.Item(
-            url, # url as primary ID.
-            url=url,
-            title=metadata['title']
-        )
-        # These components may or may not be defined.
-        if metadata['date']:
-            # isoformat is RFC-compatible iff the datetime is timezone-aware.
-            item.date_published = metadata['date'].isoformat()
+    # feed = jf.Feed("blog")
+    # for metadata in metadatas:
+    #     url = getStaticFilename(metadata)
+    #     item = jf.Item(
+    #         url, # url as primary ID.
+    #         url=url,
+    #         title=metadata['title']
+    #     )
+    #     # These components may or may not be defined.
+    #     if metadata['date']:
+    #         # isoformat is RFC-compatible iff the datetime is timezone-aware.
+    #         item.date_published = metadata['date'].isoformat()
 
-        # Set abstract if available.
-        if metadata['abstract']:
-            item.summary = metadata['abstract']
-        # Set content_html to full generated contents.
-        # NOTE: relative links (incl. img sources) won't work in a feed reader, but
-        # this is a better best effort than just including abstracts.
-        with open(STATIC_FILES_PATH + "/" + getStaticFilename(metadata), "r") as html:
-            item.content_html = html.read()
+    #     # Set abstract if available.
+    #     if metadata['abstract']:
+    #         item.summary = metadata['abstract']
+    #     # Set content_html to full generated contents.
+    #     # NOTE: relative links (incl. img sources) won't work in a feed reader, but
+    #     # this is a better best effort than just including abstracts.
+    #     with open(STATIC_FILES_PATH + "/" + getStaticFilename(metadata), "r") as html:
+    #         item.content_html = html.read()
 
-        feed.items.append(item)
+    #     feed.items.append(item)
 
-    with open(OUTPUT_FOLDER + "/feed.json", "w") as f:
-        f.write(feed.toJSON(indent="\t"))
+    # with open(OUTPUT_FOLDER + "/feed.json", "w") as f:
+    #     f.write(feed.toJSON(indent="\t"))
 
 if __name__ == "__main__":
     main()

@@ -41,6 +41,7 @@
 \usepackage{relsize}
 \usepackage{amsfonts}
 \usepackage{listings}
+\usepackage{listings-rust}
 \usepackage{xcolor}
 \usepackage{enumitem}
 \usepackage{caption}
