@@ -54,9 +54,9 @@
 }
 
 body {
-  background-color: #212121;
-  color: #ccc;
-  font-size: 13px;
+  background-color: #202020;
+  color: #cecece;
+  font-size: 14px;
   font-family: Open Sans, Verdana, sans-serif;
   min-height: 95vh;
   /* background-color: gray; */
@@ -88,7 +88,7 @@ a, a:visited {
 }
 
 .title {
-  font-size: 2.3em;
+  font-size: 2.1em;
   margin: 0;
   padding: 0.2em 0;
  }
@@ -98,9 +98,14 @@ body li {
   line-height: 1.6;
 }
 
+h1 {
+  font-size: 1.75em
+}
+
 p {
   text-align: justify;
   line-height: 1.6;
+  color: #ddd;
 }
 
 hr {
@@ -122,6 +127,7 @@ blockquote, div.sourceCode {
   background: #222;
   padding: 0.5em;
   border: 1px solid #777;
+  font-size: 0.97em;
 }
 
 p > code, li > code {
@@ -173,7 +179,7 @@ sub {
     display: inline-block;
     padding: 0.5em 0;
     width: 100%;
-    color: #888; 
+    color: #8c8c8c; 
 }
 
 .path a.current-path {
@@ -181,7 +187,7 @@ sub {
     color: #3A97C8;
 }
 .path a.visited-path {
-    color: #888; 
+    color: #8c8c8c; 
 }
 
 .btn-svg-icon {
@@ -210,12 +216,12 @@ sub {
 }
 
 .btn-div p {
-    font-size: 0.95em;
+    font-size: 0.97em;
     font-weight: 800;
 }
 
 a > .btn-div {
-    color: #ccc;
+    color: #cecece;
 }
 
 a > .btn-div:hover {
@@ -240,7 +246,7 @@ a > .btn-div:hover {
   }
 
   blockquote, div.sourceCode {
-      font-size: 1em;
+      font-size: 0.97em;
   }
 }
 
@@ -252,13 +258,13 @@ a > .btn-div:hover {
       max-width: 88%;
   }
   blockquote, div.sourceCode {
-      font-size: 1em;
+      font-size: 0.97em;
   }
 }
 
 @media screen and (min-width: 720px) and (max-width: 1920px) {
   body {
-      font-size: 14px;
+      font-size: 15px;
   }
   figure img {
       max-width: 80%;
@@ -270,7 +276,7 @@ a > .btn-div:hover {
 
 @media screen and (min-width: 1920px) {
   body {
-      font-size: 15px;
+      font-size: 16px;
   }
   figure img {
       max-width: 82%;
