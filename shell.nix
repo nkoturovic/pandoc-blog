@@ -7,7 +7,7 @@ pkgs.mkShell {
     python311Packages.python-dateutil
     python311Packages.python-frontmatter
     python311Packages.pytz
-    python311Packages.feedgenerator
+    # python311Packages.feedgenerator # Not the right package
     librsvg
     texlive.combined.scheme-full
     inconsolata

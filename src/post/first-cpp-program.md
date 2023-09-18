@@ -26,6 +26,4 @@ We can see C++ Logo on image bellow.
 
 ![Official ISO C++ Logo](../img/ISO_C++_Logo.svg){ align=left, width=70px }
 
-By the way, [this post is in the JSON Feed.](../feed.json)
-
 [^fn1]: C++ is a general-purpose programming language created by Bjarne Stroustrup 

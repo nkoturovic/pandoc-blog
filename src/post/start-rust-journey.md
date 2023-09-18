@@ -1,5 +1,5 @@
 ---
-title: Leveling up my rust journey
+title: WIP Leveling up my rust journey
 author: Nebojša Koturović
 date: 2023-09-17T15:30:45Z
 abstract: |
@@ -13,7 +13,7 @@ This is an article about my journey as C++ developer into the rust realm.
 
 ### First look
 
-If you're a geniuene C++ developer, hearing the word macro would cause strong symptoms of nausea,
+If you're a genuine C++ developer, hearing the word macro would cause strong symptoms of nausea,
 and that is exactly how I reacted the first time I saw rust syntax and found out that `prinln!` is a macro.
 
 ```Rust
@@ -36,4 +36,4 @@ because it didn't leave a strong impression at first sight.
 But I do roughly remember the first time I took a deeper look and realized that Rust was exciting.
 It was Spring 2020, during the Covid 19 lockdown.
 
-I must admit, rust is amazing in taking advantage of your C++ PTSD!
+**TODO:** Blog post is not yet finished, continue writing it.
