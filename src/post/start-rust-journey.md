@@ -1,15 +1,18 @@
 ---
-title: WIP Leveling up my rust journey
+title: WIP - Leveling up Rust
 author: Nebojša Koturović
 date: 2023-09-17T15:30:45Z
 abstract: |
     Why I think that Rust is worth learning in 2023
 ---
-# Why Rust in 2023?
+# Why Rust?
 
-This is an article about my journey as C++ developer into the rust realm.
+This article is about the journey of a C++ developer into the Rust realm.
 
 ## Course of events
+
+My Rust journey began three years ago, and I've now decided it's time to put 
+into practice and level up what I've learned about Rust.
 
 ### First look
 
@@ -22,13 +25,19 @@ fn main() {
 }
 ```
 
-Even in the most basic example of the program macros are involved, being a C++ developer you must 
-turn the page and move on with your life, rust sucks!
+So, even in the most basic example of a program macros are involved. 
+Being a C++ developer, I instinctively closed the tab and moved on with my life, rust sucks!
+
+So, even in the most basic examples of a program, macros come into play. As a C++ developer, 
+my instinctive reaction was to close the tab and move on with my life, Rust sucks!
 
 ### Second look
 
-But as you know, life of a C++ developer is tough, lots of sweat and 
-tears from compiler messages caused by bad overload resolution and missing `typename` keyword.
+As you know, the life of a C++ developer is tough, with lots of sweat and tears from 
+compiler messages, bad overload resolutions, and missing `typename` keywords. 
+But don't get me wrong, these are the perks of C++ that you can appreciate and relate to.
+
+**TODO:** Rust advantages over C++ and wise versa
 
 I couldn't pinpoint the time of first rust encounter, probably 
 because it didn't leave a strong impression at first sight.
