@@ -1,11 +1,11 @@
 ---
-title: WIP - Leveling up Rust
+title: Leveling up Rust (WIP)
 author: Nebojša Koturović
 date: 2023-09-17T15:30:45Z
 abstract: |
     Why I think that Rust might be worth learning in 2023
 ---
-# Why Rust?
+# Hello Rust
 
 This article is about the journey of a C++ developer diving into the Rust realm.
 
@@ -32,10 +32,11 @@ my instinctive reaction was to close the browser tab and move on with my life, R
 
 I couldn't pinpoint the exact time when that first rust encounter was, probably because it didn't leave a strong impression.
 But I do roughly remember the first time I took a deeper look and realized that Rust was exciting.
-It was Spring 2020, during the Covid 19 lockdown. 
+It was Spring 2020, during the Covid 19 lockdown. Since then I've been keeping an eye on the Rust community.
 
-Since then I've been keeping an eye on the Rust community.
-Initially, I was amazed with code generation capabilities, but later on I started to appreciate things like linear types, borrow checker and friendly Rust ecosystem.
+Initially, I was amazed with code generation capabilities, but later on I started to appreciate things like linear types, borrow checker and user friendly Rust ecosystem.
+
+Serialization/Deserialization in Rust
 
 ```rust
 use serde::{Deserialize, Serialize};
@@ -60,7 +61,81 @@ fn main() {
 }
 ```
 
-In next few sections, I will try to explain why Rust might be worth learning at the present moment.
+Output:
+
+```txt
+serialized = {"x":1,"y":2}
+deserialized = Point { x: 1, y: 2 }
+```
+
+I challenge you to write equivalent piece of code in C++.
+
+*Jeff Atwood: “the best code is no code at all.*
+
+In the next few sections, I will try to explain why Rust might be worth learning at the present moment.
+
+# Why Rust?
+
+In my opinion, Rust isn't successful only due to safety, rich features or community. It's due to
+to all of that combined, but most importantly because it's becoming widely used, accepted and mature enough.
+
+Don't get me wrong, I think there are few great alternatives, take Go for example.
+I think it's a great language, it has amazing tooling, simple to get started and build powerful software.
+
+Serialization/Deserialization in Go
+
+```go
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+)
+
+type Point struct {
+	X int `json:"x"`
+	Y int `json:"y"`
+}
+
+func main() {
+	point := Point{X: 1, Y: 2}
+
+	// serializes Point to []byte
+	serialized, _ := json.Marshal(point)
+	fmt.Printf("Serialized = %s\n", string(serialized))
+
+	// new variable to store deserialized data
+	var otherPoint Point
+	// deserialize from []byte to Point
+	_ = json.Unmarshal(serialized, &otherPoint)
+	fmt.Printf("Deserialized = %+v\n", otherPoint)
+}
+```
+
+Output:
+
+```txt
+Serialized = {"x":1,"y":2}
+Deserialized = {X:1 Y:2}
+```
+
+And I would recommend it over Rust in lots of cases, depending on the task of course.
+But if we're talking about preference, coming from the C++ background and having my roots in functional programming, Rust is my cup of tea.
+
+## Simple vs feature-rich languages
+
+In last decade, we're withnessing how simpler languages are gaining in popularity.
+
+*No abstraction is better than the bad abstraction*
+
+I totally see benefits of having a simpler language. However, such languages can be a tiny bit more verbose in my opinion.
+
+
+## Features
+
+### Constant improvements
+
+## Community
 
 **TODO:** Blog post is not yet finished, continue writing it.
 

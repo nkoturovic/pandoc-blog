@@ -1,5 +1,5 @@
 ---
-title: Example test post
+title: Hello world post
 author: Nebojša Koturović
 date: 2021-08-24T13:56:52Z
 abstract: "First program that every language newcomer writes is Hello world"
