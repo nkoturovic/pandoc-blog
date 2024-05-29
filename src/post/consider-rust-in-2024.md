@@ -3,7 +3,7 @@ title: Consider Rust in 2024
 author: Nebojsa Koturovic
 date: 2024-05-29T15:30:45Z
 abstract: |
-    Why I think that Rust might be worth in 2024
+    Why I think Rust might be worth it in 2024
 ---
 # Rust in 2024
 
