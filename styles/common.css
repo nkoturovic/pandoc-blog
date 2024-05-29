@@ -79,16 +79,23 @@ a, a:visited {
 .content {
   /* background-color: #121212; */
   /* padding: 0.6em; */
-  padding: 0.6em 2% 0.6em 2%;
+  padding: 0.6em 1.5% 0.6em 1.5%;
 }
 
 .comments {
   /* padding: 0.6em; */
   padding: 0.6em 2% 0.6em 2%;
+  border-top: 1px solid #777;
+  margin-top: 0.5em;
+}
+
+.giscus {
+  margin-top: 1em;
 }
 
 .title {
-  font-size: 2.1em;
+  font-size: 1.9em;
+>>>>>>> ced1faa46f3e9f521eadd85d2ae49993c6826b21
   margin: 0;
   padding: 0.2em 0;
  }
@@ -99,7 +106,7 @@ body li {
 }
 
 h1 {
-  font-size: 1.75em
+  font-size: 1.7em
 }
 
 p {
@@ -216,7 +223,7 @@ sub {
 }
 
 .btn-div p {
-    font-size: 0.97em;
+    font-size: 0.9em;
     font-weight: 800;
 }
 
@@ -235,6 +242,16 @@ a > .btn-div:hover {
 
 #btn-div-back img {
     transform: translate(0em, 0.17em);
+}
+
+#title-block-header h1 {
+    padding-top: 0.75em;
+}
+
+#TOC {
+    border-bottom: 1px solid #777;
+    padding-bottom: 0.5em;
+    margin-bottom: 1.5em;
 }
 
 @media screen and (max-width: 600px) {
@@ -266,6 +283,7 @@ a > .btn-div:hover {
   body {
       font-size: 15px;
   }
+
   figure img {
       max-width: 80%;
   }
@@ -278,6 +296,7 @@ a > .btn-div:hover {
   body {
       font-size: 16px;
   }
+
   figure img {
       max-width: 82%;
   }

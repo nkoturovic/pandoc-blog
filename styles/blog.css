@@ -1,7 +1,16 @@
+.post-item {
+  margin-top: 1.4em;
+  margin-bottom: 1.4em;
+}
+
 .post-item h2 {
-  margin-bottom: 0.1em;
+  font-size: 1.25em;
+  padding: 0.05em;
+  margin: 0.05em;
 }
 
 .post-item p {
-  margin-top: 0;
+  font-size: 0.94em;
+  padding: 0.05em;
+  margin: 0.05em;
 }
