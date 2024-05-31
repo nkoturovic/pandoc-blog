@@ -10,6 +10,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
+<script src="colorscheme.js"></script> 
 </head>
 <title>Nebojsa Koturovic - Home</title>
 <body>
@@ -20,6 +21,12 @@
   <ul class="menu">
     <li><a href="index.html"><img class="nav-svg" src="./img/icon/fi-xnsuxl-home-solid.svg"/>Home</a></li>
     <li><a href="blog.html"><img class="nav-svg" src="./img/icon/fi-xnsuxl-code-solid.svg"/>Blog</a></li>
+    <li><a id="cycle-colorscheme" onclick="cycleOptions('#color-scheme')"></a></li>
+   <select id="color-scheme" class="nav-option">
+     <option value="system">System</option>
+     <option value="dark">Dark</option>
+     <option value="light">Light</option>
+   </select>
   </ul>
 </header>
 <div class="main">

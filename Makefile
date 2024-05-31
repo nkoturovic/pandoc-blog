@@ -3,7 +3,7 @@ POST=$(shell find src/post/*)
 # in the post directory.
 OUT=$(patsubst src/post/%.md, out/post/%.html, $(POST))
 
-all: pre out/styles $(OUT) out/index.html out/blog.html favicon
+all: pre out/styles $(OUT) out/index.html out/blog.html out/colorscheme.js favicon
 	
 pre: 
 	mkdir -p src/post
@@ -43,6 +43,10 @@ out/blog.html: $(OUT) make_blog.py
 	pandoc -s out/blog.md -o out/blog.html --template templates/blog.html \
 	   	   --css="./styles/common.css" --css="./styles/blog.css" -M title="Blog" -M title-prefix="Nebojsa Koturovic"
 	rm out/blog.md
+
+out/colorscheme.js: templates/colorscheme.js
+	cp templates/colorscheme.js out/colorscheme.js
+
 
 # Shortcuts
 
