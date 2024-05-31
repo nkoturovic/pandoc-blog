@@ -88,7 +88,7 @@ a, a:visited {
 .comments {
   /* padding: 0.6em; */
   padding: 0.6em 2% 0.6em 2%;
-  border-top: 1px solid #777;
+  border-top: 1px solid #444;
   margin-top: 0.5em;
 }
 
@@ -135,12 +135,13 @@ a[href]:hover {
 blockquote, div.sourceCode {
   background-color: #202028;
   padding: 0.5em;
-  border: 1px solid #777;
+  border: 1px solid #444;
+  border-radius: 3px;
   font-size: 0.97em;
 }
 
 p > code, li > code {
-  /* border: 1px solid #777; */
+  border: 1px solid #444;
   padding: 1px 3px;
   border-radius: 3px;
   background-color: #30303a;
@@ -251,7 +252,7 @@ a > .btn-div:hover {
 }
 
 #TOC {
-    border-bottom: 1px solid #777;
+    border-bottom: 1px solid #444;
     padding-bottom: 0.5em;
     margin-bottom: 1.5em;
 }
