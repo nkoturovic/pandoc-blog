@@ -1,13 +1,16 @@
 /* header */
 .header {
-  background-color: #282828;
+  background-color: #1a1b23;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  /* position: fixed; */
-  /* z-index: 3; */
+  position: fixed;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 3;
   display: inline-block;
   width: 100%;
   color: #ccc;
   font-weight: 600;
+  border-bottom: 1px solid #343434;
 }
 
 .header ul {
@@ -15,20 +18,21 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #282828;
+  background-color: #1a1b23;
 }
 
 .header li a {
   display: block;
-  padding: 15px 20px;
-  border-right: 1px solid #282828;
+  padding: 17px 22px;
+  border-right: 1px solid #202028;
   text-decoration: none;
   color: #ccc;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #333;
+  background-color: #2b2c34;
+
   color: #eee;
   text-decoration: none;
 }
@@ -37,7 +41,7 @@
   display: block;
   float: left;
   font-size: 1.8em;
-  padding: 10px 20px;
+  padding: 14px 25px;
   text-decoration: none;
   font-weight: bold;
   color: #ccc;
@@ -69,7 +73,7 @@
 .header .menu-icon {
   cursor: pointer;
   float: right;
-  padding: 28px 20px;
+  padding: 30px 22px;
   position: relative;
   user-select: none;
 }
@@ -140,7 +144,7 @@
     float: left;
   }
   .header li a {
-    padding: 20px 30px;
+    padding: 22px 32px;
   }
   .header .menu {
     clear: none;
