@@ -118,9 +118,11 @@ p {
 }
 
 hr {
-  max-width: 33%;
-  margin: 2em auto;
-  background-color: #d8d8d8;
+  border: 1px solid #445;
+  opacity: 0.66;
+  width: 50%;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 a[href] {
