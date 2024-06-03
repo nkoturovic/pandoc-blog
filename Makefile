@@ -23,8 +23,10 @@ pre:
 favicon: src/img/favicon/android-chrome-192x192.png src/img/favicon/android-chrome-512x512.png src/img/favicon/apple-touch-icon.png src/img/favicon/favicon-16x16.png src/img/favicon/favicon-32x32.png src/img/favicon/favicon.ico src/img/favicon/site.webmanifest
 	cp $^ out/
 
-out/index.html: templates/index.html
-	cp templates/index.html out/index.html
+out/index.html: $(OUT) make_blog.py
+	python3 make_blog.py
+	pandoc -s out/blog.md -o out/index.html --template templates/index.html \
+	   	   --css="./styles/common.css" --css="./styles/blog.css" -M title="Blog" -M title-prefix="Nebojsa Koturovic"
 
 out/styles: styles/common.css styles/blog.css styles/post.css styles/nav.css styles/index.css
 	cp styles out/ -r
