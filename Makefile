@@ -34,7 +34,7 @@ out/post/%.html: src/post/%.md
 	       --template templates/post.html --filter ./filters/pretty-date.py --css="../styles/common.css" --css="../styles/post.css" \
 		   -M filename="$(shell echo "$@" | sed -E 's:.*/(.*)\.html:\1:')" -M title-prefix="Nebojsa Koturovic" --toc --toc-depth=3 
 	pandoc $< --template templates/post.latex --listings --pdf-engine=xelatex --resource-path="./out/img" \
-		   --filter ./filters/pretty-date.py \
+		   --filter ./filters/pretty-date.py --lua-filter ./filters/listing-rust.lua \
 		   -o "./out/pdf/$(shell echo "$@" | sed -E 's:.*/(.*)\.html:\1:').pdf" \
 	       -V colorlinks -M monofont=inconsolata -M mainfont="Open Sans" --toc --toc-depth=3 
 

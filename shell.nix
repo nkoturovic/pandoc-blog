@@ -2,6 +2,7 @@
 pkgs.mkShell {
   buildInputs = with pkgs; [
     pandoc
+    lua
     python311
     python311Packages.panflute
     python311Packages.python-dateutil

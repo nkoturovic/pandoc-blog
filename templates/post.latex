@@ -323,6 +323,7 @@ $if(beamer)$
 $endif$
 $if(listings)$
 \usepackage{listings}
+\usepackage{listings-rust}
 \newcommand{\passthrough}[1]{#1}
 $endif$
 $if(lhs)$
